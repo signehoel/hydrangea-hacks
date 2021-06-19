@@ -1,15 +1,23 @@
-$(document).ready(function() {
-    M.updateTextFields();
-  });
+//document.getElementById("submit").addEventListener("click", insert1());
 
-$('#textarea1').val('New Text');
-  M.textareaAutoResize($('#textarea1'));
+window.onload=function(){
+  document.getElementById("submit").addEventListener("click", insert1());
+}
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const data = new FormData(event.target);
-    const value = data.get('email');
-    console.log({ value });
-    }
-    const form = document.querySelector('form');
-    form.addEventListener('submit', handleSubmit);
+function insert1() {
+  console.warn("hello");
+
+  myJson = {
+    first_name: document.getElementById("name").value,
+    headline: document.getElementById("headline").value,
+    description: document.getElementById("description").value,
+  };
+
+  window.localStorage.setItem('review', JSON.stringify(myJson));
+
+  
+  
+  console.warn(myJson);
+}
+ 
+const form = document.querySelector('form');
