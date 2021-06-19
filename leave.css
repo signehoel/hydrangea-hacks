@@ -1,9 +1,11 @@
 .leave-review {
     width: 400px;
     height: 400px;
-    margin: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+.form {
+    margin: 20px;
 }
 
 .buttons {
@@ -13,4 +15,5 @@
 }
 .btn-large {
     margin: 10px;
+    font-family: 'Poppins', sans-serif;
 }
