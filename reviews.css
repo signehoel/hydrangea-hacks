@@ -2,6 +2,7 @@
     width: 400px;
     height: 400px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #reviews {
@@ -16,3 +17,7 @@
 .btn-large {
     margin: 10px;
 }
+
+.checked {
+    color: #ffab00;
+  }
