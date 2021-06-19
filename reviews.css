@@ -1,0 +1,18 @@
+.review-content {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+#reviews {
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.btn-large {
+    margin: 10px;
+}
