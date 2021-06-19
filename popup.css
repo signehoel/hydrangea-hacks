@@ -1,0 +1,14 @@
+.main-content {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.btn-large {
+    margin: 10px;
+}
