@@ -18,10 +18,10 @@ function appendData(data) {
         let rating = data[i].rating;
         let headline = data[i].headline;
         let description = data[i].description;
-
+        
         chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
             let url = tabs[0].url;
-            if (link === url){
+            if (url.includes(link)){
                 var div = document.createElement("div");
     
                 div.className = "card-panel deep-purple lighten-5";
@@ -42,9 +42,6 @@ function appendData(data) {
                 div.innerHTML = html;
                 mainContainer.appendChild(div);
             }  
-        });
-        // use `url` here inside the callback because it's asynchronous!
-        
-         
+        });   
     }
   }
