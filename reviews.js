@@ -9,6 +9,11 @@ fetch('reviews.json')
     console.log(err);
 });
 
+chrome.runtime.sendMessage({command:"fetch", data: {name, website, description, rating, headline}},
+(response)=> {
+    console.log('received user data', response);
+})
+
 function appendData(data) {
     var mainContainer = document.getElementById("reviews");
     for (var i = 0; i < data.length; i++) {
